@@ -17,7 +17,7 @@ const Home = () => {
           Hey, how are you feeling {"\n"}today?
         </Text>
         <ImageBackground
-          source={require("../assets/images/calm.png")}
+          source={require("../../assets/images/calm.png")}
           className="mt-5 h-[170px] w-full justify-end overflow-hidden rounded-[30px]"
           resizeMode="cover"
         >
@@ -33,7 +33,7 @@ const Home = () => {
           </Text>
         </ImageBackground>
         <ImageBackground
-          source={require("../assets/images/qoute.png")}
+          source={require("../../assets/images/qoute.png")}
           className="mt-5 h-[170px] w-full justify-end overflow-hidden rounded-[30px]"
           resizeMode="cover"
         >
