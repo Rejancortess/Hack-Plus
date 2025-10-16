@@ -1,6 +1,6 @@
-import { Ionicons } from "@expo/vector-icons";
-import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-import { ScrollView, Text, View } from "react-native";
+import { Ionicons } from '@expo/vector-icons';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import { ScrollView, Text, View } from 'react-native';
 
 const Resources = () => {
   return (
@@ -89,24 +89,28 @@ const Resources = () => {
         <Text className="mb-5 mt-5 text-2xl font-bold">Hotlines</Text>
         <View className="mb-4 h-20 w-full flex-row items-center gap-4 rounded-lg bg-white px-4 shadow-md">
           <View className="rounded-full bg-[#e0f2fe] p-3">
-            <Ionicons name="book-outline" size={24} color="#3b82f6" />
+            <Ionicons name="call-outline" size={24} color="#3b82f6" />
           </View>
           <View>
-            <Text className="mb-1 font-bold">Stress</Text>
+            <Text className="mb-1 font-bold">National Crisis Hotlines</Text>
             <Text className="text-sm text-black/60">
-              Techniques for reducing stress
+              24/7 support for mental health crises
             </Text>
           </View>
         </View>
 
-        <View className="mb-10 h-20 w-full flex-row items-center gap-4 rounded-lg bg-white px-4 shadow-md">
+        <View
+          className="mb-10 h-20 w-full 
+        flex-row items-center 
+        gap-4 rounded-lg bg-white px-4 shadow-md"
+        >
           <View className="rounded-full bg-[#e0f2fe] p-3">
-            <Ionicons name="book-outline" size={24} color="#3b82f6" />
+            <Ionicons name="call-outline" size={24} color="#3b82f6" />
           </View>
           <View>
-            <Text className="mb-1 font-bold">Stress</Text>
+            <Text className="mb-1 font-bold">Student Support Line</Text>
             <Text className="text-sm text-black/60">
-              Techniques for reducing stress
+              Support for students in distress
             </Text>
           </View>
         </View>

@@ -1,44 +1,44 @@
-import Ionicons from "@expo/vector-icons/Ionicons";
-import { LinearGradient } from "expo-linear-gradient";
-import { Link } from "expo-router";
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { LinearGradient } from 'expo-linear-gradient';
+import { Link } from 'expo-router';
 import {
   ImageBackground,
   Pressable,
   ScrollView,
   Text,
   View,
-} from "react-native";
+} from 'react-native';
 
 const Home = () => {
   return (
     <ScrollView className="flex-1 bg-[#f6f7f8] px-5">
       <View className="mt-5">
         <Text className=" text-3xl font-bold text-[#1F2937]">
-          Hey, how are you feeling {"\n"}today?
+          Hey, how are you feeling {'\n'}today?
         </Text>
         <ImageBackground
-          source={require("../../assets/images/calm.png")}
+          source={require('../../assets/images/calm.png')}
           className="mt-5 h-[170px] w-full justify-end overflow-hidden rounded-[30px]"
           resizeMode="cover"
         >
           <LinearGradient
-            colors={["rgba(0,0,0,0)", "rgba(0,0,0,0.5)"]}
+            colors={['rgba(0,0,0,0)', 'rgba(0,0,0,0.5)']}
             className="absolute inset-0"
           />
           <Text className="px-4 text-2xl font-bold text-white">
             Today&apos;s Mood
           </Text>
-          <Text className="px-4 pb-6 font-extralight text-white">
+          <Text className="px-4 pb-6  font-extralight text-white">
             You&apos;ve logged your mood as calm. Keep up the positive vibes!
           </Text>
         </ImageBackground>
         <ImageBackground
-          source={require("../../assets/images/qoute.png")}
+          source={require('../../assets/images/qoute.png')}
           className="mt-5 h-[170px] w-full justify-end overflow-hidden rounded-[30px]"
           resizeMode="cover"
         >
           <LinearGradient
-            colors={["rgba(0,0,0,0)", "rgba(0,0,0,0.5)"]}
+            colors={['rgba(0,0,0,0)', 'rgba(0,0,0,0.5)']}
             className="absolute inset-0"
           />
           <Text className="px-4 text-2xl font-bold text-white">

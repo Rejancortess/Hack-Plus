@@ -1,4 +1,4 @@
-import { ActivityIndicator, View } from "react-native";
+import { ActivityIndicator, View } from 'react-native';
 
 export default function index() {
   return (

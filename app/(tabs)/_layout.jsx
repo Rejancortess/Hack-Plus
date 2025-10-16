@@ -1,44 +1,46 @@
-import Ionicons from "@expo/vector-icons/Ionicons";
-import MaterialIcons from "@expo/vector-icons/MaterialIcons";
-import { Tabs, useRouter } from "expo-router";
-import { Pressable } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import "../../global.css";
+import Ionicons from '@expo/vector-icons/Ionicons';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import { Link, Tabs, useRouter } from 'expo-router';
+import { Pressable } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import '../../global.css';
 
 export default function RootLayout() {
   const router = useRouter();
   return (
-    <SafeAreaView style={{ flex: 1 }} edges={["left", "right"]}>
+    <SafeAreaView style={{ flex: 1 }} edges={['left', 'right']}>
       <Tabs>
         <Tabs.Screen
           name="home"
           options={{
-            title: "MindLink",
-            tabBarLabel: "Home",
+            title: 'MindLink',
+            tabBarLabel: 'Home',
             headerStyle: {
               elevation: 0,
               shadowOpacity: 0,
-              backgroundColor: "#f6f7f8",
+              backgroundColor: '#f6f7f8',
             },
             headerTitleStyle: {
               fontSize: 20,
-              fontWeight: "bold",
-              color: "#1F2937",
+              fontWeight: 'bold',
+              color: '#1F2937',
             },
             headerRight: () => (
-              <Pressable>
-                <Ionicons
-                  name="settings-outline"
-                  size={24}
-                  color="#1F2937"
-                  style={{ marginRight: 15 }}
-                />
-              </Pressable>
+              <Link href="settings" asChild>
+                <Pressable>
+                  <Ionicons
+                    name="settings-outline"
+                    size={24}
+                    color="#1F2937"
+                    style={{ marginRight: 15 }}
+                  />
+                </Pressable>
+              </Link>
             ),
 
             tabBarIcon: ({ focused, color, size }) => (
               <Ionicons
-                name={focused ? "home" : "home-outline"}
+                name={focused ? 'home' : 'home-outline'}
                 size={size}
                 color={color}
               />
@@ -48,19 +50,19 @@ export default function RootLayout() {
         <Tabs.Screen
           name="mood"
           options={{
-            title: "Mood Tracker",
-            tabBarLabel: "Mood",
+            title: 'Mood Tracker',
+            tabBarLabel: 'Mood',
             headerStyle: {
               elevation: 0,
               shadowOpacity: 0,
-              backgroundColor: "#f6f7f8",
+              backgroundColor: '#f6f7f8',
             },
 
             headerTitleStyle: {
               fontSize: 20,
-              fontWeight: "bold",
+              fontWeight: 'bold',
             },
-            headerTintColor: "#1F2937",
+            headerTintColor: '#1F2937',
             headerLeft: () => (
               <MaterialIcons
                 name="arrow-back"
@@ -70,10 +72,10 @@ export default function RootLayout() {
                 onPress={() => router.back()}
               />
             ),
-            headerTitleAlign: "center",
+            headerTitleAlign: 'center',
             tabBarIcon: ({ focused, color, size }) => (
               <Ionicons
-                name={focused ? "happy" : "happy-outline"}
+                name={focused ? 'happy' : 'happy-outline'}
                 size={size}
                 color={color}
               />
@@ -83,14 +85,14 @@ export default function RootLayout() {
         <Tabs.Screen
           name="chat"
           options={{
-            title: "Chat",
-            tabBarLabel: "Chat",
+            title: 'Chat',
+            tabBarLabel: 'Chat',
             headerStyle: {
               elevation: 0,
               shadowOpacity: 0,
-              backgroundColor: "#f6f7f8",
+              backgroundColor: '#f6f7f8',
             },
-            headerTintColor: "#1F2937",
+            headerTintColor: '#1F2937',
 
             headerLeft: () => (
               <MaterialIcons
@@ -103,15 +105,15 @@ export default function RootLayout() {
             ),
             headerTitleStyle: {
               fontSize: 20,
-              fontWeight: "bold",
+              fontWeight: 'bold',
             },
-            headerTitleAlign: "center",
+            headerTitleAlign: 'center',
             tabBarIcon: ({ focused, color, size }) => (
               <Ionicons
                 name={
                   focused
-                    ? "chatbubble-ellipses"
-                    : "chatbubble-ellipses-outline"
+                    ? 'chatbubble-ellipses'
+                    : 'chatbubble-ellipses-outline'
                 }
                 size={size}
                 color={color}
@@ -122,14 +124,14 @@ export default function RootLayout() {
         <Tabs.Screen
           name="motivation"
           options={{
-            title: "Motivation",
-            tabBarLabel: "Motivation",
+            title: 'Motivation',
+            tabBarLabel: 'Motivation',
             headerStyle: {
               elevation: 0,
               shadowOpacity: 0,
-              backgroundColor: "#f6f7f8",
+              backgroundColor: '#f6f7f8',
             },
-            headerTintColor: "#1F2937",
+            headerTintColor: '#1F2937',
 
             headerLeft: () => (
               <MaterialIcons
@@ -142,9 +144,9 @@ export default function RootLayout() {
             ),
             headerTitleStyle: {
               fontSize: 20,
-              fontWeight: "bold",
+              fontWeight: 'bold',
             },
-            headerTitleAlign: "center",
+            headerTitleAlign: 'center',
             headerRight: () => (
               <MaterialIcons
                 name="star-purple500"
@@ -155,7 +157,7 @@ export default function RootLayout() {
             ),
             tabBarIcon: ({ focused, color, size }) => (
               <Ionicons
-                name={focused ? "bulb-sharp" : "bulb-outline"}
+                name={focused ? 'bulb-sharp' : 'bulb-outline'}
                 size={size}
                 color={color}
               />
@@ -165,16 +167,16 @@ export default function RootLayout() {
         <Tabs.Screen
           name="resources"
           options={{
-            title: "Resources",
-            tabBarLabel: "Resources",
+            title: 'Resources',
+            tabBarLabel: 'Resources',
             headerStyle: {
               elevation: 0,
-              backgroundColor: "#f6f7f8",
+              backgroundColor: '#f6f7f8',
               borderBottomWidth: 1,
               shadowOpacity: 0,
-              borderBottomColor: "#4799eb",
+              borderBottomColor: '#4799eb',
             },
-            headerTintColor: "#1F2937",
+            headerTintColor: '#1F2937',
 
             headerLeft: () => (
               <MaterialIcons
@@ -187,12 +189,12 @@ export default function RootLayout() {
             ),
             headerTitleStyle: {
               fontSize: 20,
-              fontWeight: "bold",
+              fontWeight: 'bold',
             },
-            headerTitleAlign: "center",
+            headerTitleAlign: 'center',
             tabBarIcon: ({ focused, color, size }) => (
               <Ionicons
-                name={focused ? "bookmarks" : "bookmarks-outline"}
+                name={focused ? 'bookmarks' : 'bookmarks-outline'}
                 size={size}
                 color={color}
               />
