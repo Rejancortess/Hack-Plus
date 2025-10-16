@@ -2,7 +2,7 @@ import { Stack } from 'expo-router';
 import React from 'react';
 
 const RootLayout = () => {
-  const isAuthenticated = false; 
+  const isAuthenticated = false;
   return (
     <Stack>
       <Stack.Protected guard={!isAuthenticated}>
