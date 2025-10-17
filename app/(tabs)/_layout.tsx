@@ -26,7 +26,7 @@ export default function RootLayout() {
               color: '#1F2937',
             },
             headerRight: () => (
-              <Link href="settings" asChild>
+              <Link href="/settings" asChild>
                 <Pressable>
                   <Ionicons
                     name="settings-outline"
