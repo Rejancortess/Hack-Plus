@@ -28,7 +28,7 @@ const Home = () => {
           <Text className="px-4 text-2xl font-bold text-white">
             Today&apos;s Mood
           </Text>
-          <Text className="px-4 pb-6  font-extralight text-white">
+          <Text className="px-4 pb-6 text-white font-extralight">
             You&apos;ve logged your mood as calm. Keep up the positive vibes!
           </Text>
         </ImageBackground>
@@ -44,7 +44,7 @@ const Home = () => {
           <Text className="px-4 text-2xl font-bold text-white">
             Quote of the Day
           </Text>
-          <Text className="px-4 pb-6 font-extralight text-white">
+          <Text className="px-4 pb-6 text-white font-extralight">
             The only way to do great work is to love what you do. - Steve Jobs
           </Text>
         </ImageBackground>
@@ -52,10 +52,10 @@ const Home = () => {
           <Text className="mt-10 text-2xl font-bold text-[#1F2937]">
             Quick Actions
           </Text>
-          <View className="mb-10 mt-5 w-full flex-row flex-wrap justify-around gap-6 px-2">
-            <Link href="chat" asChild>
+          <View className="flex-row flex-wrap justify-around w-full gap-6 px-2 mt-5 mb-10">
+            <Link href="/chat" asChild>
               <Pressable className="relative h-[100px] w-40 items-center justify-center rounded-2xl border border-gray-200 bg-white p-4 text-center shadow-lg">
-                <View className="absolute -top-3 rounded-full bg-white p-2 shadow-lg">
+                <View className="absolute p-2 bg-white rounded-full shadow-lg -top-3">
                   <Ionicons
                     name="chatbubble-ellipses-outline"
                     size={24}
@@ -67,9 +67,9 @@ const Home = () => {
                 </Text>
               </Pressable>
             </Link>
-            <Link href="resources" asChild>
+            <Link href="/resources" asChild>
               <Pressable className="relative h-[100px] w-40 items-center justify-center rounded-2xl border border-gray-200 bg-white p-4 text-center shadow-lg">
-                <View className="absolute -top-3 rounded-full bg-white p-2 shadow-lg">
+                <View className="absolute p-2 bg-white rounded-full shadow-lg -top-3">
                   <Ionicons name="book-outline" size={24} color="#4799eb" />
                 </View>
                 <Text className="mt-2 text-center font-bold text-[#1F2937]">
@@ -77,9 +77,9 @@ const Home = () => {
                 </Text>
               </Pressable>
             </Link>
-            <Link href="mood" asChild>
+            <Link href="/mood" asChild>
               <Pressable className="relative h-[100px] w-40 items-center justify-center rounded-2xl border border-gray-200 bg-white p-4 text-center shadow-lg">
-                <View className="absolute -top-3 rounded-full bg-white p-2 shadow-lg">
+                <View className="absolute p-2 bg-white rounded-full shadow-lg -top-3">
                   <Ionicons name="heart-outline" size={24} color="#4799eb" />
                 </View>
                 <Text className="mt-2 text-center font-bold text-[#1F2937]">
@@ -87,9 +87,9 @@ const Home = () => {
                 </Text>
               </Pressable>
             </Link>
-            <Link href="support" asChild>
+            <Link href="/resources" asChild>
               <Pressable className="relative h-[100px] w-40 items-center justify-center rounded-2xl border border-gray-200 bg-white p-4 text-center shadow-lg">
-                <View className="absolute -top-3 rounded-full bg-white p-2 shadow-lg">
+                <View className="absolute p-2 bg-white rounded-full shadow-lg -top-3">
                   <Ionicons name="people-outline" size={24} color="#4799eb" />
                 </View>
                 <Text className="mt-2 text-center font-bold text-[#1F2937]">
